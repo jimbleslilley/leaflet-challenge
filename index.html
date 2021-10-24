@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earthquakes</title>
 
-  <head>
-    <meta charset="utf-8">
-    <title>Basic Map</title>
+  <!-- D3 library -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 
-      <!-- D3 library -->
-     <script src="https://d3js.org/d3.v5.min.js"></script>
-  
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-      crossorigin="" />
-  
-    <!-- Leaflet JavaScript code -->
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-      crossorigin=""></script>
-  
-    <!-- Our CSS (Note: Make sure the map container has a defined height!) -->
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-  </head>
-  
-  <body>
-    <!-- The div where we'll insert our map -->
-    <div id="map"></div>
-  
-    <!-- JavaScript file -->
-    <script type="text/javascript" src="/static/js/logic.js"></script>
-  </body>
-  
-  </html>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+
+ <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <!-- polyfill.io is the library for using newer JavaScript features (such as Object.assign) in older browers. -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+  <!-- The div that holds our map -->
+  <div id="map-id"></div>
+
+  <!-- Our JavaScript file -->
+  <script type="text/javascript" src="static/js/earthquake-map.js"></script>
+
+</body>
+
+</html>
